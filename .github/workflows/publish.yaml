@@ -10,7 +10,7 @@ uses: docker/login-action@v1
 with:
 registry: ghcr.io
 username: ${{ github.actor }}
-password: ${{ secrets.GITHUB_TOKEN }}
+password: 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
 - name: Build the hello-docker Docker image
 run: |
        docker build . --tag ghcr.io/gitkyong/ubuntu-demo:latest
